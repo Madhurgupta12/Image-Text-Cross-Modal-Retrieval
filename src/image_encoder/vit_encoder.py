@@ -35,7 +35,9 @@ def encode_image_folder(image_folder, output_path):
     print(f"✅ Saved image embeddings to: {output_path}")
 
 if __name__ == "__main__":
-    from src.utils.config import DATASET_PATH
+    
+    DATASET_PATH = r"D:\UniProject\Image_Text_Cross_Modal_Retrieval\data\images\Images"
     output_path = "data/processed/image_embeddings/vit_embeddings.pt"
+
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     encode_image_folder(DATASET_PATH, output_path)

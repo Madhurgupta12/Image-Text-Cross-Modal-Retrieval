@@ -3,30 +3,30 @@
 import pandas as pd
 import os
 
-INPUT_FILE = "data/images/captions.txt"   # your current file
-OUTPUT_FILE = "data/captions/train_captions.txt"
+def extract_captions():
+    INPUT = "data/images/captions.txt"   # your original file
+    OUTPUT = "data/captions/train_captions.txt"
 
-def clean_captions():
-    print(f"📖 Reading caption file: {INPUT_FILE}")
+    print(f"📖 Reading raw captions from: {INPUT}")
 
-    # Read as CSV — the separator is a comma
-    df = pd.read_csv(INPUT_FILE)
+    df = pd.read_csv(INPUT, header=None, names=["image", "caption"])
 
-    # Check for correct columns
-    if "caption" not in df.columns:
-        for i in df.columns:
-            print(f"Found column: {i}")
-        raise KeyError(f"Expected a 'caption' column. Found: {df.columns}")
+    # Clean caption text
+    df["caption"] = df["caption"].astype(str).str.strip()
+    df["caption"] = df["caption"].str.replace('"', "")
 
-    captions = df["caption"].astype(str).str.strip().tolist()
+    # Save ONLY captions
+    captions = df["caption"].tolist()
 
-    # Save one caption per line
-    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        for cap in captions:
-            f.write(cap + "\n")
+    os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
 
-    print(f"✅ Cleaned and saved {len(captions)} captions to {OUTPUT_FILE}")
+    with open(OUTPUT, "w", encoding="utf-8") as f:
+        for c in captions:
+            f.write(c + "\n")
+
+    print(f"✅ Clean captions saved at: {OUTPUT}")
+    print(f"✅ Total captions: {len(captions)}")
+
 
 if __name__ == "__main__":
-    clean_captions()
+    extract_captions()
