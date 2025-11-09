@@ -1,0 +1,38 @@
+# Core Dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+pillow>=9.5.0
+
+# Deep Learning Models
+transformers>=4.30.0
+sentence-transformers>=2.2.2
+
+# Data Processing
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+umap-learn>=0.5.3
+
+# Progress and Logging
+tqdm>=4.65.0
+tensorboard>=2.13.0
+
+# Optional: Advanced Features
+faiss-cpu>=1.7.4  # For efficient similarity search (use faiss-gpu for GPU support)
+# faiss-gpu>=1.7.4  # Uncomment for GPU-accelerated FAISS
+
+# Optional: Experiment Tracking
+# wandb>=0.15.0  # Weights & Biases for experiment tracking
+
+# Development Tools
+pytest>=7.3.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Jupyter (for notebooks)
+jupyter>=1.0.0
+ipywidgets>=8.0.0
