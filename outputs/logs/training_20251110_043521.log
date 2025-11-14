@@ -1,0 +1,8 @@
+2025-11-10 04:35:21 | training | INFO | Logging to file: C:\Users\arvin\OneDrive\Desktop\ml project\Image-Text-Cross-Modal-Retrieval-YusufBranch\outputs\logs\training_20251110_043521.log
+2025-11-10 04:35:21 | training | INFO | Total parameters: 1,118,209
+2025-11-10 04:35:21 | training | INFO | Starting training for 50 epochs
+2025-11-10 04:35:21 | training | INFO | 
+============================================================
+2025-11-10 04:35:21 | training | INFO | Epoch 1/50
+2025-11-10 04:35:21 | training | INFO | ============================================================
+2025-11-10 04:36:38 | training | INFO | Train Loss: 2.1026
