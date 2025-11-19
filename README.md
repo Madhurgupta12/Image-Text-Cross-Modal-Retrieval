@@ -4,7 +4,7 @@ A comprehensive multimodal representation learning framework for image-text retr
 
 ## 🌟 Features
 
-- **Vision Transformer (ViT) Encoding**: Google ViT-base-patch16-224 with batch processing and GPU acceleration
+- **Vision Transformer (ViT) Encoding**: Google  ViT-base-patch16-224 with batch processing and GPU acceleration
 - **LLM Text Encoding**: Sentence-transformers/all-MiniLM-L6-v2 for efficient text embeddings
 - **Unified Embedding Space**: 512-dimensional shared space with learnable projection heads
 - **CLIP-Style Training**: Contrastive learning with learnable temperature parameter (τ = 0.07)
@@ -658,3 +658,4 @@ For questions or issues, please open an issue on GitHub.
 ---
 
 **Built with ❤️ for multimodal AI research and applications**
+
