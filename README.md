@@ -606,7 +606,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome from all, Please feel free to submit a Pull Request.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -658,4 +658,5 @@ For questions or issues, please open an issue on GitHub.
 ---
 
 **Built with ❤️ for multimodal AI research and applications**
+
 
